@@ -1,0 +1,237 @@
+.hero {
+  text-align: center;
+  background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .75) 0%, #101018 75%, #060612 100%), url('../img/scan-lines.jpg') no-repeat;
+  background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .75) 0%, #101018 75%, #060612 100%), url('../img/scan-lines.jpg') no-repeat;
+  background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .75) 0%, #101018 75%, #060612 100%), url('../img/scan-lines.jpg') no-repeat;
+  background-size: cover;
+  .bar {
+    @include bp(big-bear) {
+      border-left: 1px solid $bess;
+    }
+  }
+}
+
+.scroll {
+  height: 9px;
+  transition: scale;
+  transition-duration: .4s;
+  transition-timing-function: ease-in-out;
+  &:hover {
+    transform: scale(.9);
+  }
+}
+
+.hero,
+.brief,
+.biology,
+.intellect,
+.vulnerability,
+.footer {
+  position: relative;
+  padding: 100px 0;
+  border-bottom: 1px solid $bess;
+  &::before {
+    position: absolute;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    background: url('../img/grain.png');
+  }
+}
+
+.brief {
+  background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .45) 0%, #101018 75%, #060612 100%), url('../img/brief-bg.jpg') no-repeat;
+  background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .45) 0%, #101018 75%, #060612 100%), url('../img/brief-bg.jpg') no-repeat;
+  background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .45) 0%, #101018 75%, #060612 100%), url('../img/brief-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .bar {
+    @include bp(big-bear) {
+      border-right: 1px solid $bess;
+    }
+  }
+}
+
+.biology {
+  background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .40) 0%, #101018 75%, #060612 100%), url('../img/biology-bg.jpg') no-repeat;
+  background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .40) 0%, #101018 75%, #060612 100%), url('../img/biology-bg.jpg') no-repeat;
+  background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .40) 0%, #101018 75%, #060612 100%), url('../img/biology-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .bar {
+    @include bp(big-bear) {
+      border-left: 1px solid $bess;
+    }
+  }
+}
+
+.intellect {
+  background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .40) 0%, #101018 75%, #060612 100%), url('../img/intellect.jpg') no-repeat;
+  background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .40) 0%, #101018 75%, #060612 100%), url('../img/intellect.jpg') no-repeat;
+  background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .40) 0%, #101018 75%, #060612 100%), url('../img/intellect.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .bar {
+    @include bp(big-bear) {
+      border-right: 1px solid $bess;
+    }
+  }
+}
+
+.vulnerability {
+  background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .35) 0%, #101018 75%, #060612 100%), url('../img/vulnerability-bg.jpg') no-repeat;
+  background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .35) 0%, #101018 75%, #060612 100%), url('../img/vulnerability-bg.jpg') no-repeat;
+  background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .35) 0%, #101018 75%, #060612 100%), url('../img/vulnerability-bg.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  .bar {
+    @include bp(big-bear) {
+      border-left: 1px solid $bess;
+    }
+  }
+}
+
+.footer {
+  text-align: center;
+  background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .75) 0%, #101018 75%, #060612 100%), url('../img/scan-lines.jpg') no-repeat;
+  background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .75) 0%, #101018 75%, #060612 100%), url('../img/scan-lines.jpg') no-repeat;
+  background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .75) 0%, #101018 75%, #060612 100%), url('../img/scan-lines.jpg') no-repeat;
+  background-size: cover;
+  p {
+    margin-bottom: 0;
+  }
+  .scroll {
+    transform: rotate(180deg);
+  }
+  .bar {
+    @include bp(big-bear) {
+      border-right: 1px solid $bess;
+    }
+  }
+}
+
+
+.bar {
+  width: 80%;
+  max-width: 1200px;
+  pointer-events: none;
+  height: 100%;
+  position: absolute;
+  padding: 0 10%;
+  top: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.description {
+  margin-bottom: 0;
+  @include bp(big-bear) {
+    max-width: 600px;
+  }
+}
+
+.right {
+  @include bp(big-bear) {
+    float: right;
+  }
+}
+
+// Flickity
+
+/* external css: flickity.css */
+
+.gallery {
+  background: $bess;
+  height: 500px;
+  border-bottom: 1px solid $bess;
+}
+
+.gallery-cell {
+  width: 100%;
+  height: 100%;
+  counter-increment: gallery-cell;
+  &::before {
+    position: absolute;
+    pointer-events: none;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    display: block;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    background: url('../img/grain.png');
+    content: counter(gallery-cell);
+    font-size: 6em;
+    font-family: "freight-sans-pro",sans-serif;
+    color: $white;
+    line-height: 480px;
+  }
+  &:first-child {
+    background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .80) 0%, #101018 75%, #060612 100%), url('../img/egg.jpg') no-repeat;
+    background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .80) 0%, #101018 75%, #060612 100%), url('h../img/egg.jpg') no-repeat;
+    background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .80) 0%, #101018 75%, #060612 100%), url('../img/egg.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &:nth-child(2) {
+    background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .85) 0%, #101018 75%, #060612 100%), url('../img/facehugger.jpg') no-repeat;
+    background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .85) 0%, #101018 75%, #060612 100%), url('../img/facehugger.jpg') no-repeat;
+    background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .85) 0%, #101018 75%, #060612 100%), url('../img/facehugger.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &:nth-child(3) {
+    background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .85) 0%, #101018 75%, #060612 100%), url('../img/chestburster.jpg') no-repeat;
+    background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .85) 0%, #101018 75%, #060612 100%), url('../img/chestburster.jpg') no-repeat;
+    background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .85) 0%, #101018 75%, #060612 100%), url('../img/chestburster.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  &:last-child {
+    background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .85) 0%, #101018 75%, #060612 100%), url('../img/drone.jpg') no-repeat;
+    background: -moz-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .85) 0%, #101018 75%, #060612 100%), url('../img/drone.jpg') no-repeat;
+    background: -webkit-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .85) 0%, #101018 75%, #060612 100%), url('../img/drone.jpg') no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+}
+
+// /* cell number */
+// .gallery-cell:before {
+//   display: block;
+//   text-align: center;
+//   line-height: 200px;
+//   font-size: 80px;
+//   color: white;
+// }
+
+.flickity-prev-next-button {
+  background: transparent;
+  &:hover {
+    background: transparent;
+  }
+  .arrow {
+    fill: white;
+    &:hover {
+      fill: $green;
+    }
+  }
+}
+
+.flickity-page-dots {
+  bottom: 100px;
+  .dot {
+    width: 12px;
+    height: 12px;
+    opacity: 1;
+    background: transparent;
+    border: 2px solid $bess;
+  }
+  .dot.is-selected {
+    background: $green;
+  }
+}
