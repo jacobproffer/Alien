@@ -17,8 +17,7 @@
   </footer>
   <!-- End of footer -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="assets/js/flickity.pkgd.js" type="text/javascript"></script>
-  <script src="assets/js/project-scripts.js" type="text/javascript"></script>
+  <script src="assets/js/app.min.js" type="text/javascript"></script>
 </body>
 <!-- End body -->
 </html>
