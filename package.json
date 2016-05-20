@@ -1,21 +1,21 @@
 {
-  "name": "website-shell-v2",
+  "name": "alien",
   "version": "1.0.0",
-  "description": "basic website shell",
+  "description": "Website for Aliens Day 2016",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jacobproffer/website-shell-v2.git"
+    "url": "git+https://github.com/jacobproffer/alien.git"
   },
   "author": "jacob proffer",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jacobproffer/website-shell-v2/issues"
+    "url": "https://github.com/jacobproffer/alien/issues"
   },
-  "homepage": "https://github.com/jacobproffer/website-shell-v2#readme",
+  "homepage": "https://github.com/jacobproffer/alien#readme",
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.1",
