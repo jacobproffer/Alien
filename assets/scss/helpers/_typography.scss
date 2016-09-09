@@ -15,15 +15,19 @@ h4 {
 
 h1 {
   @include font-size($h1-font-sizes);
-  letter-spacing: 1.2em;
-  margin: 3em -1.2em 3em 0;
+  @include bp(small) {
+    letter-spacing: 1.2em;
+    margin: 3em -1.2em 3em 0;
+  }
 }
 
 h2 {
   color: $green;
   @include font-size($h2-font-sizes);
-  letter-spacing: 1.2em;
-  margin-right: -1.2em;
+  @include bp(small) {
+    letter-spacing: 1.2em;
+    margin-right: -1.2em;
+  }
 }
 
 h3 {
