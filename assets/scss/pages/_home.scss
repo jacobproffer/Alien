@@ -1,3 +1,24 @@
+html, body {
+    width: 100%;
+    height: auto;
+    // cursor: url('cur-1.png') 5 5, auto;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+body:after {
+    content:'';
+    position: fixed;
+    display: block;
+    z-index: 2;
+    width: 100%;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    background: $green;
+    cursor: none;
+    -webkit-animation: slideOut 600ms 600ms forwards;
+    animation: slideOut 600ms 600ms forwards;
+}
+
 .hero {
   text-align: center;
   background: -ms-radial-gradient(50% 50%, ellipse, rgba(53, 44, 40, .75) 0%, #101018 75%, #060612 100%), url('../img/scan-lines.jpg') no-repeat;
@@ -234,4 +255,11 @@
   .dot.is-selected {
     background: $green;
   }
+}
+
+@-webkit-keyframes slideOut {
+    100% { visibility:hidden; -webkit-transform:translateX(100%); }
+}
+@keyframes slideOut {
+    100% { visibility:hidden; transform:translateX(100%); }
 }
