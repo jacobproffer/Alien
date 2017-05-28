@@ -10,6 +10,10 @@
 @import "helpers/mixins";
 @import "helpers/typography";
 
+// Vendors
+
+@import "vendors/flickity";
+
 // Layout
 
 @import "layout/grid";

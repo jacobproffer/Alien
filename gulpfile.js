@@ -10,6 +10,12 @@ var gulp        = require('gulp'),
     imagemin    = require('gulp-imagemin'),
     browserSync = require('browser-sync').create();
 
+var scripts = [
+  'assets/js/jquery-3.2.1.min.js',
+  'assets/js/flickity.pkgd.js',
+  'assets/js/project-scripts.js'
+];
+
 // Static Server + watching scss/html files
 gulp.task('serve', ['sass', 'js'], function() {
 
@@ -36,7 +42,7 @@ gulp.task('sass', function () {
 
 // Configure JS.
 gulp.task('js', function() {
-  return gulp.src('assets/js/**/*.js')
+  return gulp.src(scripts)
     .pipe(uglify())
     .pipe(concat('app.js'))
     .pipe(rename({suffix: '.min'}))
